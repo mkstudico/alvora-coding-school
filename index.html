@@ -1,1 +1,491 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alvora Coding School - Voice-Narrated Coding Education</title>
+  <meta name="description" content="Master advanced coding with voice-narrated tutorials, challenges, mentorship, and community at Alvora Coding School.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white">
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 bg-white shadow-sm">
+    <div class="container mx-auto px-6 py-4">
+      <div class="flex justify-between items-center">
+        <div class="flex items-center">
+          <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-primary to-primary-light flex items-center justify-center text-white font-bold mr-3">
+            A
+          </div>
+          <a href="#" class="text-xl font-bold text-gray-900">Alvora</a>
+        </div>
+        
+        <div class="hidden md:flex space-x-8">
+          <a href="#features" class="nav-link text-gray-600 hover:text-gray-900">Features</a>
+          <a href="#courses" class="nav-link text-gray-600 hover:text-gray-900">Courses</a>
+          <a href="#testimonials" class="nav-link text-gray-600 hover:text-gray-900">Testimonials</a>
+          <a href="#pricing" class="nav-link text-gray-600 hover:text-gray-900">Pricing</a>
+        </div>
+        
+        <div class="flex items-center space-x-4">
+          <button onclick="redirectToSignPage()" class="hidden md:block px-4 py-2 btn-outline rounded-lg font-medium">Log In</button>
+          <button onclick="redirectToSignPage()" class="px-4 py-2 btn-primary rounded-lg font-medium">Sign Up</button>
+          <button class="md:hidden text-gray-600 focus:outline-none">
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-gradient py-20 md:py-32">
+    <div class="container mx-auto px-6">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-12 md:mb-0 animate-fadeInUp">
+          <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Master Coding with <span class="text-primary">AI-Guided and</span><br>Practical Learning</h1>
+          <p class="text-lg text-gray-600 mb-8 max-w-lg">Accelerate your coding journey with our immersive, voice-narrated tutorials, real-world projects, and expert mentorship.</p>
+          <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+            <button onclick="redirectToSignPage()" class="px-6 py-3 btn-primary rounded-lg font-semibold">Start Learning Free</button>
+            <button class="px-6 py-3 bg-white text-gray-800 border border-gray-200 rounded-lg font-semibold hover:bg-gray-50 transition">
+              <i class="fas fa-play mr-2 text-primary"></i> Watch Demo
+            </button>
+          </div>
+          <div class="mt-8 flex items-center">
+            <div class="flex -space-x-2">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="w-10 h-10 rounded-full border-2 border-white">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-10 h-10 rounded-full border-2 border-white">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" class="w-10 h-10 rounded-full border-2 border-white">
+            </div>
+            <div class="ml-4">
+              <div class="flex items-center">
+                <div class="flex">
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                  <i class="fas fa-star text-yellow-400"></i>
+                </div>
+                <span class="ml-2 text-sm font-medium">5.0 (2,500+ reviews)</span>
+              </div>
+              <p class="text-sm text-gray-600">Join our developers learning with Alvora</p>
+            </div>
+          </div>
+        </div>
+        <div class="md:w-1/2 animate-fadeInUp animate-delay-100">
+          <div class="relative">
+            <div class="absolute -top-6 -left-6 w-64 h-64 bg-primary-light rounded-full opacity-10"></div>
+            <div class="absolute -bottom-6 -right-6 w-64 h-64 bg-accent rounded-full opacity-10"></div>
+            <div class="relative bg-white p-1 rounded-xl shadow-xl">
+              <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                   alt="Coding tutorial" 
+                   class="rounded-lg w-full h-auto">
+              <div class="absolute bottom-4 left-4 right-4 bg-black bg-opacity-70 text-white p-3 rounded-lg">
+                <div class="flex items-center">
+                  <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                    <i class="fas fa-volume-up"></i>
+                  </div>
+                  <div class="ml-3">
+                    <h4 class="font-semibold">React Advanced Patterns</h4>
+                    <p class="text-xs opacity-80">Lesson 5: Compound Components</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-20">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Why Learn with Alvora?</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Our unique approach combines the best of interactive coding with auditory learning for maximum retention.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="feature-card bg-white p-8 rounded-xl shadow-md animate-fadeInUp">
+          <div class="w-14 h-14 bg-primary-light bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+            <i class="fas fa-headphones text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Voice-Narrated Tutorials</h3>
+          <p class="text-gray-600">Learn complex concepts through crystal-clear, professionally narrated tutorials that guide you through every step.</p>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="feature-card bg-white p-8 rounded-xl shadow-md animate-fadeInUp animate-delay-100">
+          <div class="w-14 h-14 bg-accent bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+            <i class="fas fa-laptop-code text-accent text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Interactive Coding</h3>
+          <p class="text-gray-600">Practice directly in the browser with our integrated coding environment that provides real-time feedback.</p>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="feature-card bg-white p-8 rounded-xl shadow-md animate-fadeInUp animate-delay-200">
+          <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+            <i class="fas fa-briefcase text-primary text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Real Projects</h3>
+          <p class="text-gray-600">Build portfolio-worthy projects that solve real-world problems, with guidance from industry experts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="py-20 bg-gray-50">
+    <div class="container mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Popular Courses</h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto">Browse our most in-demand courses taught by industry professionals.</p>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Course 1 -->
+        <div class="course-card bg-white rounded-xl overflow-hidden shadow-md animate-fadeInUp">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                 alt="React Course" 
+                 class="w-full h-48 object-cover">
+            <div class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-2 py-1 rounded">
+              BESTSELLER
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-2">
+              <div class="flex mr-2">
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+              </div>
+              <span class="text-sm text-gray-600">(1,240)</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">HTML,CSS & JAVASCRIPT</h3>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center">
+                <i class="far fa-clock text-gray-400 mr-1"></i>
+                <span class="text-sm text-gray-600">2 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Course 2 -->
+        <div class="course-card bg-white rounded-xl overflow-hidden shadow-md animate-fadeInUp animate-delay-100">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                 alt="TypeScript Course" 
+                 class="w-full h-48 object-cover">
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-2">
+              <div class="flex mr-2">
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+              </div>
+              <span class="text-sm text-gray-600">(890)</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">JAVA & REACT</h3>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center">
+                <i class="far fa-clock text-gray-400 mr-1"></i>
+                <span class="text-sm text-gray-600">5 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Course 3 -->
+        <div class="course-card bg-white rounded-xl overflow-hidden shadow-md animate-fadeInUp animate-delay-200">
+          <div class="relative">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                 alt="Node.js Course" 
+                 class="w-full h-48 object-cover">
+            <div class="absolute top-4 right-4 bg-accent text-white text-xs font-bold px-2 py-1 rounded">
+              NEW
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center mb-2">
+              <div class="flex mr-2">
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star text-yellow-400"></i>
+                <i class="fas fa-star-half-alt text-yellow-400"></i>
+              </div>
+              <span class="text-sm text-gray-600">(420)</span>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Node.js Performance</h3>
+            <div class="flex justify-between items-center">
+              <div class="flex items-center">
+                <i class="far fa-clock text-gray-400 mr-1"></i>
+                <span class="text-sm text-gray-600">12 hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-12">
+        <button onclick="redirectToSignPage()" class="px-6 py-3 btn-outline rounded-lg font-semibold">
+          SIGN UP to See more <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-primary text-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Coding Skills?</h2>
+      <p class="text-lg opacity-90 mb-8 max-w-2xl mx-auto">Join thousands of developers who have accelerated their careers with Alvora's unique voice-narrated learning approach.</p>
+      <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <button onclick="redirectToSignPage()" class="px-6 py-3 bg-white text-primary rounded-lg font-semibold hover:bg-gray-100 transition">Start Learning Free</button>
+        <button class="px-6 py-3 border-2 border-white rounded-lg font-semibold hover:bg-white hover:bg-opacity-10 transition">
+          <i class="fas fa-play mr-2"></i> Watch Demo
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div class="md:col-span-2">
+          <div class="flex items-center mb-4">
+            <div class="w-10 h-10 rounded-lg bg-gradient-to-r from-primary to-primary-light flex items-center justify-center text-white font-bold mr-3">
+              A
+            </div>
+            <span class="text-xl font-bold text-white">Alvora</span>
+          </div>
+          <p class="mb-4">The most effective way to master advanced coding concepts through voice-narrated learning.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-twitter text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-github text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-linkedin text-xl"></i>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <i class="fab fa-youtube text-xl"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-bold mb-4">Company</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition">About</a></li>
+            <li><a href="#" class="hover:text-white transition">Careers</a></li>
+            <li><a href="#" class="hover:text-white transition">Blog</a></li>
+            <li><a href="#" class="hover:text-white transition">Press</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-bold mb-4">Resources</h4>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition">Documentation</a></li>
+            <li><a href="#" class="hover:text-white transition">Community</a></li>
+            <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+            <li><a href="#" class="hover:text-white transition">Status</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+        <p>© 2025 Alvora Coding School | by btem@fficial | All rights reserved.</p>
+        <div class="flex space-x-6 mt-4 md:mt-0">
+          <a href="#" class="hover:text-white transition">Privacy Policy</a>
+          <a href="#" class="hover:text-white transition">Terms of Service</a>
+          <a href="#" class="hover:text-white transition">Cookies</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sign-Up Modal -->
+  <div id="signup-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-xl max-w-md w-full p-8 animate-fadeInUp">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold">Create Your Account</h2>
+        <button onclick="hideModal()" class="text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <form id="signup-form" class="space-y-4">
+        <div>
+          <label for="signup-name" class="block text-sm font-medium mb-1">Full Name</label>
+          <input type="text" id="signup-name" class="w-full form-input p-3 rounded-lg" required>
+        </div>
+        <div>
+          <label for="signup-email" class="block text-sm font-medium mb-1">Email</label>
+          <input type="email" id="signup-email" class="w-full form-input p-3 rounded-lg" required>
+        </div>
+        <div>
+          <label for="signup-password" class="block text-sm font-medium mb-1">Password</label>
+          <input type="password" id="signup-password" class="w-full form-input p-3 rounded-lg" required>
+        </div>
+        <p id="signup-error" class="text-red-500 text-sm hidden"></p>
+        <button type="button" onclick="redirectToSignPage()" class="w-full btn-primary py-3 rounded-lg font-semibold">
+          Create Account
+        </button>
+      </form>
+      <div class="mt-4 text-center text-sm">
+        Already have an account? <button onclick="redirectToSignPage()" class="text-primary hover:underline">Log In</button>
+      </div>
+      <div class="relative my-6">
+        <div class="absolute inset-0 flex items-center">
+          <div class="w-full border-t border-gray-200"></div>
+        </div>
+        <div class="relative flex justify-center text-sm">
+          <span class="px-2 bg-white text-gray-500">Or continue with</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <button onclick="redirectToSignPage()" class="px-4 py-2 border border-gray-200 rounded-lg font-medium flex items-center justify-center hover:bg-gray-50 transition">
+          <i class="fab fa-google text-red-500 mr-2"></i> Google
+        </button>
+        <button onclick="redirectToSignPage()" class="px-4 py-2 border border-gray-200 rounded-lg font-medium flex items-center justify-center hover:bg-gray-50 transition">
+          <i class="fab fa-github text-gray-800 mr-2"></i> GitHub
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div id="login-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-xl max-w-md w-full p-8 animate-fadeInUp">
+      <div class="flex justify-between items-center mb-6">
+        <h2 class="text-2xl font-bold">Welcome Back</h2>
+        <button onclick="hideModal()" class="text-gray-500 hover:text-gray-700">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <form id="login-form" class="space-y-4">
+        <div>
+          <label for="login-email" class="block text-sm font-medium mb-1">Email</label>
+          <input type="email" id="login-email" class="w-full form-input p-3 rounded-lg" required>
+        </div>
+        <div>
+          <label for="login-password" class="block text-sm font-medium mb-1">Password</label>
+          <input type="password" id="login-password" class="w-full form-input p-3 rounded-lg" required>
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="flex items-center">
+            <input type="checkbox" id="remember-me" class="h-4 w-4 text-primary focus:ring-primary border-gray-300 rounded">
+            <label for="remember-me" class="ml-2 block text-sm">Remember me</label>
+          </div>
+          <a href="#" class="text-sm text-primary hover:underline">Forgot password?</a>
+        </div>
+        <p id="login-error" class="text-red-500 text-sm hidden"></p>
+        <button type="button" onclick="redirectToSignPage()" class="w-full btn-primary py-3 rounded-lg font-semibold">
+          Log In
+        </button>
+      </form>
+      <div class="mt-4 text-center text-sm">
+        Don't have an account? <button onclick="redirectToSignPage()" class="text-primary hover:underline">Sign Up</button>
+      </div>
+      <div class="relative my-6">
+        <div class="absolute inset-0 flex items-center">
+          <div class="w-full border-t border-gray-200"></div>
+        </div>
+        <div class="relative flex justify-center text-sm">
+          <span class="px-2 bg-white text-gray-500">Or continue with</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <button onclick="redirectToSignPage()" class="px-4 py-2 border border-gray-200 rounded-lg font-medium flex items-center justify-center hover:bg-gray-50 transition">
+          <i class="fab fa-google text-red-500 mr-2"></i> Google
+        </button>
+        <button onclick="redirectToSignPage()" class="px-4 py-2 border border-gray-200 rounded-lg font-medium flex items-center justify-center hover:bg-gray-50 transition">
+          <i class="fab fa-github text-gray-800 mr-2"></i> GitHub
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Simple redirect function
+    function redirectToSignPage() {
+      window.location.href = 'sign.html';
+    }
+
+    // Modal Functions (kept for UI but modified to redirect)
+    function showSignupModal() {
+      redirectToSignPage();
+    }
+  
+    function showLoginModal() {
+      redirectToSignPage();
+    }
+  
+    function hideModal() {
+      document.getElementById('signup-modal').classList.add('hidden');
+      document.getElementById('login-modal').classList.add('hidden');
+    }
+  
+    // Navigation Buttons (modified to redirect)
+    function showSignUp() {
+      redirectToSignPage();
+    }
+  
+    function showLogin() {
+      redirectToSignPage();
+    }
+
+    // Form Submissions (modified to redirect)
+    document.getElementById('signup-form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      redirectToSignPage();
+    });
+  
+    document.getElementById('login-form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      redirectToSignPage();
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  
+    // Animation on scroll
+    const animateElements = document.querySelectorAll('.animate-fadeInUp');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.1 });
+  
+    animateElements.forEach(element => {
+      observer.observe(element);
+    });
+  </script>
+</body>
+</html>
